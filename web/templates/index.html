@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/styles.css') }}">
+        
+    </head>
+    <body>
+        <h1>CNN Music Genre Classifier</h1>
+        <div class="dz_container">
+            <div class="dropzone"></div>
+            <img id="audio_upload" src="static/images/audio_upload.png"/>
+            <div id="chartContainer"></div>
+        </div>
+        <script src="{{url_for('static', filename='js/app.js')}}"></script>
+        <script src="{{url_for('static', filename='js/canvasjs.min.js')}}"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script> -->
+    </body>
+</html>
